@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  #no-more-tables tbody,
+  #no-more-tables tr,
+  #no-more-tables td {
+    display: block;
+  }
+
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #no-more-tables td {
+    text-align: center;
+    position: relative;
+    padding-left: 30%;
+  }
+
+  #no-more-tables td::before {
+    content: attr(data-title);
+    position: absolute;
+    left: 6px;
+    padding-left: 30px;
+    font-weight: bold;
+  }
+}
