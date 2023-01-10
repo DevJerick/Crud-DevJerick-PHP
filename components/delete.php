@@ -11,7 +11,7 @@ $query = "DELETE FROM house_list WHERE id='$id'";
 $result = mysqli_query($con, $query);
 
 if ($result){
-    header('Location:../index.php');
+       header('Location:http://localhost/DevJerick-CRUD/');
      exit;
 }
 

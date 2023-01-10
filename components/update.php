@@ -33,7 +33,7 @@ if (isset($_POST['submit'])){
     $query = "UPDATE house_list SET name='$name', parking='$parking', shower='$shower', floor='$floor', images='$insert_image' WHERE id='$id'";
     $result = mysqli_query($con, $query);
     if ($result){
-       header('Location:../index.php');
+       header('Location:http://localhost/DevJerick-CRUD/');
     } else {
         die(mysqli_error($con));
     }

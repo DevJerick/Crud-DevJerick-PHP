@@ -30,7 +30,7 @@ if (isset($_POST['submit'])){
     $query = "INSERT INTO house_list (name, parking, shower, floor, images) VALUES ('$name','$parking','$shower', '$floor', '$insert_image')";
     $result = mysqli_query($con, $query);
     if ($result){
-       header('Location:..//index.php');
+       header('Location:http://localhost/DevJerick-CRUD/');
     } else {
         die(mysqli_error($con));
     }
